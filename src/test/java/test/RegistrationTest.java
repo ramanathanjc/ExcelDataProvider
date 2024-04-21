@@ -28,8 +28,7 @@ public class RegistrationTest{
 	
 	@DataProvider
 	public Object[][] getRegTestData() {
-		Object regData[][] = excel.getData("reg");
-		System.out.println("Got data frm excel :" + regData);
+		Object regData[][] = ExcelUtil.getData("reg");
 		return regData;
 		
 	}
